@@ -78,9 +78,11 @@ int ConcatStringList::indexOf(char c) const {
                 if (temp->CharArrayList[i] == c) return count;
                 count++;
             }
+            temp = temp->next;
         }
     }
-    return -1;
+    count = -1;
+    return count;
 }
 
 std::string ConcatStringList::toString() const {
@@ -91,6 +93,7 @@ std::string ConcatStringList::toString() const {
         while (temp != NULL)
         {
             output += temp->CharArrayList;
+            temp = temp->next;
         }
     }
     return output;
