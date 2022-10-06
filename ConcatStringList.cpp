@@ -1,8 +1,8 @@
 #include "ConcatStringList.h"
-
+/*
 ConcatStringList::ReferencesList ConcatStringList::refList = ConcatStringList::ReferencesList();
 ConcatStringList::DeleteStringList ConcatStringList::delStrList = ConcatStringList::DeleteStringList();
-
+*/
 
 ConcatStringList::ConcatStringList(const char * s) {
     CharALNode *newNode = new CharALNode;
@@ -42,7 +42,7 @@ char ConcatStringList::get(int index) const {
     char output;
     if ( index >= length || index < 0 )
     {
-        throw string("Index of string is invalid!");
+       throw out_of_range("Index of string is invalid!");
     }
 
     if (head != NULL)
@@ -112,4 +112,3 @@ ConcatStringList ConcatStringList::reverse() const {
 ConcatStringList::~ConcatStringList() {
 
 }
-
