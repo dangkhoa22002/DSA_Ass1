@@ -5,22 +5,15 @@ ConcatStringList::DeleteStringList ConcatStringList::delStrList = ConcatStringLi
 */
 
 ConcatStringList::ConcatStringList(const char * s) {
+
     CharALNode *newNode = new CharALNode;
     newNode->next = NULL;
     newNode->prev = NULL;
     newNode->CharArrayList = s;
 
-    if(this->head == NULL)
-    {
-        this->head = newNode;
-        this->tail = newNode;
-    }
-    else
-    {
-        this->tail->next  = newNode;
-        newNode->prev = tail;
-        tail = newNode;
-    }
+    this->head = newNode;
+    this->tail = newNode;
+
 }
 
 int ConcatStringList::length() const {
