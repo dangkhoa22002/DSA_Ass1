@@ -11,7 +11,7 @@ struct CharALNode{
 
 class ConcatStringList {
 public:
- /*   class ReferencesList; // forward declaration
+   class ReferencesList; // forward declaration
     class DeleteStringList; // forward declaration
 
 public:
@@ -19,7 +19,7 @@ public:
     static DeleteStringList delStrList;
 
     // TODO: may provide some attributes
-*/
+
     CharALNode* head;
     CharALNode* tail;
 
@@ -33,9 +33,9 @@ public:
     ConcatStringList concat(const ConcatStringList & otherS) const;
     ConcatStringList subString(int from, int to) const;
        ConcatStringList reverse() const;
-    /* ~ConcatStringList();
-  */
-/*
+    ~ConcatStringList();
+
+
 public:
     class ReferencesList {
         // TODO: may provide some attributes
@@ -53,7 +53,7 @@ public:
         int size() const;
         std::string totalRefCountsString() const;
     };
-*/
+
 };
 
 #endif // __CONCAT_STRING_LIST_H__
