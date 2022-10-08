@@ -1,8 +1,8 @@
 #include "ConcatStringList.h"
-/*
+
 ConcatStringList::ReferencesList ConcatStringList::refList = ConcatStringList::ReferencesList();
 ConcatStringList::DeleteStringList ConcatStringList::delStrList = ConcatStringList::DeleteStringList();
-*/
+
 
 CharALNode *CreatNewNode (string str)    /////// Tao newNode
 {
@@ -237,7 +237,7 @@ ConcatStringList ConcatStringList::reverse() const {
 
     return output;
 }
-/*
+
 ConcatStringList::~ConcatStringList() {
 
-}*/
+}
