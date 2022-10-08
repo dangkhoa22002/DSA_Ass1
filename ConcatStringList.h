@@ -31,11 +31,10 @@ public:
     int indexOf(char c) const;
     std::string toString() const;
     ConcatStringList concat(const ConcatStringList & otherS) const;
-
-  ConcatStringList subString(int from, int to) const;
-    /*   ConcatStringList reverse() const;
-    ~ConcatStringList();
-    */
+    ConcatStringList subString(int from, int to) const;
+       ConcatStringList reverse() const;
+    /* ~ConcatStringList();
+  */
 /*
 public:
     class ReferencesList {
